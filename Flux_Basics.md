@@ -26,12 +26,13 @@ its the fastest model, is tailored for local development and personal use. FLUX.
 #### Comparing Variants 
 
 | Qualifier | FLUX.1 pro | FLUX.1 dev | FLUX.1 schnell |
-| :---:         |     :---:      |    :---: |
+| :---:         |     :---:      |    :---: |    :---: |
 | Image Quality   | Best     | Better    | Good    |
 | Speed   | Good     | Good    | Best    |
 | Usability & Licensing   | Paid. Cloased. for Ent & Pros. high Quality images. Commercial purpose     | Non-commerical. for Student, Hobbyist & Researchers    | Open. Personal & Local development. rapid prototyping    |
 
 #### Up
 
-| 1| b|
-|qsdf|asasas|
+| 1 | b |
+|-------|-------|
+| qsdf | asasas |
