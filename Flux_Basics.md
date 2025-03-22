@@ -31,8 +31,33 @@ its the fastest model, is tailored for local development and personal use. FLUX.
 | Speed   | Good     | Good    | Best    |
 | Usability & Licensing   | Paid. Cloased. for Ent & Pros. high Quality images. Commercial purpose     | Non-commerical. for Student, Hobbyist & Researchers    | Open. Personal & Local development. rapid prototyping    |
 
-#### Up
+# Flux workflow basics
 
-| 1 | b |
-|-------|-------|
-| qsdf | asasas |
+- Load checkpoint node has 3 components i.e. MODEL, CLIP & VAE. For Flux workflow, these components has to be loaded seperately as induvidual nodes.
+    - Load Diffusion Model node
+    - DualClip Loader
+    - Load VAE
+  - Flux Guidance
+ ![image](https://github.com/user-attachments/assets/a21466d7-3424-49ce-8e76-a5d20a10af5a)
+
+#### Load Diffusion Model 
+- choose flux Dev as unet model
+- Weight Type as fp8. weight type is the compression of the model associated with size. smaller model have distortions, but very very negligible
+  
+#### DualClip Loader
+- connect both Positive and Negative clips to Dual Clip Loader
+- Only positive clip is considered in Flux architecture
+- Negative clip is required for ComfyUI architecture, but it does not make any difference to Flux WF. its suggest to keep empty.
+- 
+
+#### Flux Guidance 
+- add strength to the prompt i.e. its addition or adding strength to CFG
+- only added to Positive CLIP
+
+#### kSampler
+- Make CFG to 1.0 as the strength is determined by Flux guiance node.  
+
+
+
+
+      
