@@ -37,24 +37,23 @@ its the fastest model, is tailored for local development and personal use. FLUX.
     - Load Diffusion Model node
     - DualClip Loader
     - Load VAE
-  - Flux Guidance
+
  ![image](https://github.com/user-attachments/assets/a21466d7-3424-49ce-8e76-a5d20a10af5a)
 
-#### Load Diffusion Model 
+#### Load Diffusion Model Node
 - choose flux Dev as unet model
 - Weight Type as fp8. weight type is the compression of the model associated with size. smaller model have distortions, but very very negligible
   
-#### DualClip Loader
+#### DualClip Loader Node
 - connect both Positive and Negative clips to Dual Clip Loader
 - Only positive clip is considered in Flux architecture
 - Negative clip is required for ComfyUI architecture, but it does not make any difference to Flux WF. its suggest to keep empty.
-- 
 
-#### Flux Guidance 
+#### Flux Guidance Node
 - add strength to the prompt i.e. its addition or adding strength to CFG
 - only added to Positive CLIP
 
-#### kSampler
+#### kSampler Node
 - Make CFG to 1.0 as the strength is determined by Flux guiance node.  
 
 
