@@ -147,7 +147,7 @@ tail -f kohya_logs.log
 
 ![image](https://github.com/user-attachments/assets/e44a3858-b97a-46eb-83ce-235aa606a36f)
 
-#### Step 10
+#### Step 10 : Configure Samples
 - Generate output during the process. Ideal to keep it at end of every cycle.
 
 ![image](https://github.com/user-attachments/assets/bc524d09-04f6-43d1-bd29-067ad2528a54)
