@@ -85,8 +85,11 @@ echo "HF_TOKEN=<YOUR_HUGGINGFACE_TOKEN>" >> .env
 huggingface-cli login
 
 # Paste token when prompted and Enter
-# Add token as git credential? (Y/n). Dont respond, just Enter 
+# Add token as git credential? (Y/n). Dont respond, just Enter
 ```
+![image](https://github.com/user-attachments/assets/872315b0-c56c-45d9-b84b-f4e232611d4c)
+Note: ignore git error and note for only Login successful. 
+
 # Step 4
 # Step 5: Launch Flux Train UI
 ```bash
