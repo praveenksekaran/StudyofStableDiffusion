@@ -31,7 +31,7 @@ git submodule update --init --recursive
 
 #### Step 2.2 Set Up Python Env
 Create  virtual Env. Can use Condo but git is easier
-Activate virtual Env.
+Activate virtual Env
 
 ```bash
 # Create a virtual environment named 'venv'
@@ -41,7 +41,7 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 Note: if Virtual Env is active. then the command prompt will have (venv) suffixed 
-E.g. (venv) root@instance:~/home#
+E.g. (venv) root@instance:~/ai-toolkit#
 
 #### Step 2.3 Install Dependencies 
 
@@ -108,7 +108,7 @@ python flux_train_ui.py
 - watch all the activities in Terminal
 ![image](https://github.com/user-attachments/assets/752c719d-5a69-4c38-bcec-faac557dcb15)
 
-#### Configure Training 
+#### Advance Options
 - Increase the "steps" to 2000-3000 (Default 1000). idea is to over train and then choose the right model
 - "Learning Rate" (default 0.0004) value can be set between 0.0001 - 0.0005
      - lesser the value more features are trained on i.e. towards 0.0001
@@ -124,7 +124,8 @@ python flux_train_ui.py
    - "Low VRAM" : False. as we are using A6000. if we are using A5000 then True
   ![image](https://github.com/user-attachments/assets/0ca18e0b-caf5-4057-9fcf-631669740402)
 
-#### Advance options 
+#### Even more Advance options 
+- set " Use more advance options" to True
 - "Sample_every" : after how many steps you need to take sample
 - "Save_every" : after how many steps you need to save the model
 - "max_steps_saves_to_keep" : models are overwritten after certain steps. keep this value higher than steps/save_every
@@ -153,6 +154,20 @@ python flux_train_ui.py
 
 ![image](https://github.com/user-attachments/assets/3c9079e7-f439-45e9-9350-7ce9cc4f219b)
 
+# Re-run the model 
+- Run the below commands 
+```bash
+# Change directory to the cloned repository
+cd ai-toolkit
+
+# Activate the virtual environment
+source venv/bin/activate
+
+# Run the training UI script
+python flux_train_ui.py
+```
+
+- Follow the UI for creating the new LoRA 
 
 
 
