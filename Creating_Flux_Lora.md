@@ -166,6 +166,9 @@ cd ai-toolkit
 # Activate the virtual environment
 source venv/bin/activate
 
+# Confirm hugging face login
+huggingface-cli login
+
 # Run the training UI script
 python flux_train_ui.py
 ```
