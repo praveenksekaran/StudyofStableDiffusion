@@ -87,6 +87,7 @@ huggingface-cli login
 # Paste token when prompted and Enter
 # Add token as git credential? (Y/n). Dont respond, just Enter
 ```
+
 ![image](https://github.com/user-attachments/assets/872315b0-c56c-45d9-b84b-f4e232611d4c)
 Note: ignore git error and note for only Login successful. 
 
